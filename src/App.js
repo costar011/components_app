@@ -16,15 +16,15 @@ const Btn = styled.button`
   margin: 10px;
 
   outline: none;
-  border: ${(props) => (props.isBorder ? "1px solid #999" : "none")};
+  border: ${(props) => (props.isBorder ? "1px solid #6b6b6b" : "none")};
   border-radius: 5px;
 
   transition: 0.5s;
   cursor: pointer;
 
   &:hover {
-    background-color: skyblue;
-    color: #999;
+    background-color: #595959;
+    color: #ffff;
   }
 `;
 
@@ -32,7 +32,8 @@ class App extends React.Component {
   render() {
     return (
       <h1>
-        <BButton />
+        <Btn>btn</Btn>
+        <Btn>btn1</Btn>
       </h1>
     );
   }
